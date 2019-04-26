@@ -1,15 +1,18 @@
 import java.awt.*;
 
 public class Tile {
-    private int rank = 2;
+    private int value = 2;
+    private int row, col;
     static int height, width;
     boolean canMerge;
     private Color color;
-    public Tile(int r){
-        rank = r;
+    public Tile(int r, int c, int v){
+        value = v;
+        row = r;
+        col = c;
     }
 
     public void setColor(Tile tile){
-        color = (new Color(rank, rank, 0));
+        color = (new Color(value, value, 0));
     }
 }
