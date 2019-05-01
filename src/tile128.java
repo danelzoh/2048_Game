@@ -1,7 +1,7 @@
 import java.awt.Image;
 
 public class tile128 extends Tile{
-	static Image tile8Image;
+	static Image tile128Image;
 
 	public tile128(int v, Image i, int r, int c) {
 		super(v, i, r, c);

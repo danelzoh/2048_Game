@@ -10,9 +10,10 @@ public class Tile {
     
     public Tile(int v, Image i, int r, int c){
         value = v;
+        image = i;
         row = r;
         col = c;
-        image = i;
+
     }
 
     public void setColor(Tile tile){
