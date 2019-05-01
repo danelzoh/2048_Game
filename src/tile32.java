@@ -1,4 +1,5 @@
 import java.awt.Image;
+import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
@@ -12,7 +13,15 @@ public class tile32 extends Tile{
 
 	private static Image getImage() {
 		if(tile32Image == null) {
-		//	tile32Image = ImageIO.read(tile32Image);
+			try {
+				tile32Image = ImageIO.read(Tile.class.getClass().getResource("/tile32Image"));
+				
+				System.out.println("tile32 test");
+				
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		// TODO Auto-generated method stub
 		return tile32Image;

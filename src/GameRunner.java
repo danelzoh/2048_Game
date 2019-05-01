@@ -1,8 +1,12 @@
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.util.Scanner;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 
 public class GameRunner {
     private JPanel panel;
@@ -11,6 +15,15 @@ public class GameRunner {
 
     public static void main(String[] args) {
         new GameRunner().start();
+        File file = new File("tile256Image.jpg");
+		BufferedImage image = null;
+		try {
+			image = ImageIO.read(file);
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+        Tile t = new tile32(32,image,1,1);
+        System.out.println("test2");
     }
 
     public void start() {
