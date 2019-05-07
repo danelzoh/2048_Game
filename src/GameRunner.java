@@ -12,27 +12,35 @@ public class GameRunner {
     private JPanel panel;
     private Timer timer;
     private static final int REFRESH_RATE = 10;
+    //private new Grid;
 
     public static void main(String[] args) {
+    	
+    	//MAKE GRID
+    	
+    	
         new GameRunner().start();
-        File file = new File("tile256Image.jpg");
-		BufferedImage image = null;
+        // File file = new File(;
+		/*
+        BufferedImage image = null;
 		try {
-			image = ImageIO.read(file);
+			image = ImageIO.read(getClass().getResource("/images/tile256Image.jpg"));
 		}catch(IOException e) {
 			e.printStackTrace();
 		}
         Tile t = new tile32(32,image,1,1);
-        System.out.println("test2");
+        System.out.println("test2"); */
     }
 
     public void start() {
         JFrame frame = new JFrame("Space");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+     //   Grid grid = new Grid();
         panel = new JPanel() {
             @Override
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
+        //        grid.draw(g);
             }
         };
         panel.setLayout(null);
@@ -42,7 +50,7 @@ public class GameRunner {
         frame.pack();
         frame.setVisible(true);
         System.out.println("test");
-
+        panel.repaint();
 
         timer = new Timer(REFRESH_RATE, new ActionListener() {
             @Override
