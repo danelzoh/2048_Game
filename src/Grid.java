@@ -19,7 +19,7 @@ public class Grid {
 				}catch(IOException e) {
 					e.printStackTrace();
 				}
-				tiles[row][col] = new Tile(256, image, row, col);
+				tiles[row][col] = new Tile(256, row, col);
 			}
 		}
 		//new Tile[row][col];
