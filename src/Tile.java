@@ -10,7 +10,7 @@ public class Tile {
     private Color color;
     private Image image;
 
-    public final static String PATH_PREFIX = "res/images/";
+    public final static String PATH_PREFIX = "/images/";
 
 
     public Tile(int v, int r, int c){
@@ -28,8 +28,7 @@ public class Tile {
         Image img = null;
         name = PATH_PREFIX+name;
         try {
-
-            img = ImageIO.read(this.getClass().getResource(name));
+            image = ImageIO.read(getClass().getResource(name));
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -38,7 +37,7 @@ public class Tile {
     }
     
     public void draw(Graphics g) {
-    	//add
+    	g.drawImage(image, 0, 0, null);
     	
     }
 }
