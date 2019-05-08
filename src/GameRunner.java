@@ -17,10 +17,10 @@ public class GameRunner {
     public static void main(String[] args) {
     	
     	//MAKE GRID
+    	Grid grid = new Grid();
     	
     	
         new GameRunner().start();
-
     }
 
     public void start() {
