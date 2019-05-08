@@ -21,23 +21,10 @@ public class GameRunner {
     	
     	
         new GameRunner().start();
-        
-        /*
-		 * 
-        BufferedImage image = null;
-		try {
-			image = ImageIO.read(getClass().getResource("/images/tile256Image.jpg"));
-		}catch(IOException e) {
-			e.printStackTrace();
-		}
-        Tile t = new tile32(32,image,1,1);
-        System.out.println("test2");  
-        
-        */
     }
 
     public void start() {
-        JFrame frame = new JFrame("Space");
+        JFrame frame = new JFrame("Board");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         panel = new JPanel() {
             @Override
