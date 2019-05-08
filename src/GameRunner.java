@@ -26,12 +26,11 @@ public class GameRunner {
     public void start() {
         JFrame frame = new JFrame("Board");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        Grid grid = new Grid();
         panel = new JPanel() {
             @Override
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                grid.draw(g);
+        //        grid.draw(g);
             }
         };
         panel.setLayout(null);
