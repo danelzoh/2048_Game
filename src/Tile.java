@@ -38,6 +38,7 @@ public class Tile {
     }
     
     public void draw(Graphics g) {
+    	//add
     	
     }
 }

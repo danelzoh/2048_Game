@@ -15,7 +15,7 @@ public class Grid {
 				File file = new File("tile256Image.jpg");
 				BufferedImage image = null;
 				try {
-					image = ImageIO.read(file);
+					image = ImageIO.read(getClass().getResource("/images/tile256Image.jpg"));
 				}catch(IOException e) {
 					e.printStackTrace();
 				}
