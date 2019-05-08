@@ -17,11 +17,13 @@ public class GameRunner {
     public static void main(String[] args) {
     	
     	//MAKE GRID
+    	Grid grid = new Grid();
     	
     	
         new GameRunner().start();
-        // File file = new File(;
-		/*
+        
+        /*
+		 * 
         BufferedImage image = null;
 		try {
 			image = ImageIO.read(getClass().getResource("/images/tile256Image.jpg"));
@@ -29,13 +31,14 @@ public class GameRunner {
 			e.printStackTrace();
 		}
         Tile t = new tile32(32,image,1,1);
-        System.out.println("test2"); */
+        System.out.println("test2");  
+        
+        */
     }
 
     public void start() {
         JFrame frame = new JFrame("Space");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-     //   Grid grid = new Grid();
         panel = new JPanel() {
             @Override
             public void paintComponent(Graphics g) {
