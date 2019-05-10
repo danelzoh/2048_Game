@@ -27,8 +27,12 @@ public class GameRunner {
         JFrame frame = new JFrame("Board");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 <<<<<<< HEAD
+<<<<<<< HEAD
         grid = new Grid();
 
+=======
+        Grid grid = new Grid();
+>>>>>>> parent of ad76636... changes
 =======
         Grid grid = new Grid();
 >>>>>>> parent of ad76636... changes
