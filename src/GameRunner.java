@@ -12,12 +12,9 @@ public class GameRunner {
     private JPanel panel;
     private Timer timer;
     private static final int REFRESH_RATE = 10;
-    //private new Grid;
+    private Grid grid;
 
     public static void main(String[] args) {
-    	
-    	//MAKE GRID
-    	Grid grid = new Grid();
     	
     	
         new GameRunner().start();
@@ -26,6 +23,8 @@ public class GameRunner {
     public void start() {
         JFrame frame = new JFrame("Board");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        grid = new Grid();
+
         panel = new JPanel() {
             @Override
             public void paintComponent(Graphics g) {
