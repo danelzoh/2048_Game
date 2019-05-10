@@ -1,7 +1,6 @@
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.io.IOException;
-import java.sql.SQLOutput;
 
 public class Tile {
     private int value;
@@ -18,14 +17,15 @@ public class Tile {
         value = v;
         row = r;
         col = c;
-        getImage("tile"+v+"Image.jpg");
+        image = getImage("tile"+v+"Image.jpg");
     }
 
     public void setColor(Tile tile){
         color = (new Color(value, value, 0));
     }
 
-    protected void getImage(String name) {
+    protected  Image getImage(String name) {
+        Image img = null;
         name = PATH_PREFIX+name;
         try {
             image = ImageIO.read(getClass().getResource(name));
@@ -33,9 +33,11 @@ public class Tile {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+        return img;
     }
     
     public void draw(Graphics g) {
-    	g.drawImage(image, row*width, col*width, width,height, null);
+    	g.drawImage(image, 0, 0, null);
+    	
     }
 }
