@@ -12,7 +12,7 @@ public class Grid {
 	public Grid() {
 		for(int row =0; row < tiles.length; row++) {
 			for(int col = 0; col < tiles[0].length; col++) {
-				tiles[row][col] = new Tile(256, row, col);
+				tiles[row][col] = new Tile(2048, row, col);
 			}
 		}
 	}
