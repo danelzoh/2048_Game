@@ -12,17 +12,9 @@ public class Grid {
 	public Grid() {
 		for(int row =0; row < tiles.length; row++) {
 			for(int col = 0; col < tiles[0].length; col++) {
-				File file = new File("tile256Image.jpg");
-				BufferedImage image = null;
-				try {
-					image = ImageIO.read(getClass().getResource("/images/tile256Image.jpg"));
-				}catch(IOException e) {
-					e.printStackTrace();
-				}
 				tiles[row][col] = new Tile(256, row, col);
 			}
 		}
-		//new Tile[row][col];
 	}
 	
 	public void draw(Graphics g) {
