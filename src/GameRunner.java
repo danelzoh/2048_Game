@@ -20,6 +20,10 @@ public class GameRunner {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    	//MAKE GRID
+>>>>>>> parent of ad76636... changes
 =======
     	//MAKE GRID
 >>>>>>> parent of ad76636... changes
@@ -45,10 +49,14 @@ public class GameRunner {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
          = new Grid();
 
 
+=======
+        Grid grid = new Grid();
+>>>>>>> parent of ad76636... changes
 =======
         Grid grid = new Grid();
 >>>>>>> parent of ad76636... changes
