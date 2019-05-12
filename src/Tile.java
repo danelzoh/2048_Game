@@ -19,6 +19,8 @@ public class Tile {
         row = r;
         col = c;
         getImage("tile"+v+"Image.jpg");
+        System.out.println("tile"+v+"Image.jpg");
+        //add code which is used for empty cell with a value of '0'
     }
 
     public void setColor(Tile tile){
