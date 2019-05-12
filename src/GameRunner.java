@@ -16,7 +16,6 @@ public class GameRunner {
 
     public static void main(String[] args) {
     	
-    	//MAKE GRID
     	Grid grid = new Grid();
     	
     	
@@ -26,21 +25,15 @@ public class GameRunner {
     public void start() {
         JFrame frame = new JFrame("Board");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-<<<<<<< HEAD
-<<<<<<< HEAD
-        grid = new Grid();
 
-=======
-        Grid grid = new Grid();
->>>>>>> parent of ad76636... changes
-=======
-        Grid grid = new Grid();
->>>>>>> parent of ad76636... changes
+         = new Grid();
+
+
         panel = new JPanel() {
             @Override
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-        //        grid.draw(g);
+                grid.draw(g);
             }
         };
         panel.setLayout(null);
