@@ -12,9 +12,19 @@ public class Grid {
 	public Grid() {
 		for(int row =0; row < tiles.length; row++) {
 			for(int col = 0; col < tiles[0].length; col++) {
-				tiles[row][col] = new Tile(2048, row, col);
+				tiles[row][col] = new Tile(0, row, col);
 			}
 		}
+
+		int tempRow = (int) (tiles.length * Math.random());
+		int tempCol = (int) (tiles[0].length * Math.random());
+		
+		tiles[tempRow][tempCol].setValue(2);
+		
+		
+//		tiles[(int) (tiles.length * Math.random())][(int) (tiles[0].length * Math.random())] 
+//				
+//				= new Tile (2, (int) (tiles.length * Math.random()), (int) (tiles[0].length * Math.random()));
 	}
 	
 	public void draw(Graphics g) {
@@ -24,6 +34,10 @@ public class Grid {
 				tiles[r][c].draw(g);
 			}
 		}
+	}
+	
+	public void randTile() {
+		
 	}
 	
 }
