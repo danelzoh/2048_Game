@@ -10,8 +10,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 =======
+=======
+>>>>>>> parent of ad76636... changes
 =======
 >>>>>>> parent of ad76636... changes
 =======
@@ -37,6 +40,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of ad76636... changes
+=======
 >>>>>>> parent of ad76636... changes
 =======
 >>>>>>> parent of ad76636... changes
@@ -100,6 +106,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of ad76636... changes
+=======
 >>>>>>> parent of ad76636... changes
 =======
 >>>>>>> parent of ad76636... changes
@@ -132,12 +141,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state>
               <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#898#899#0" expanded="true" />
                 <element signature="e#971#972#0" expanded="true" />
+=======
+            <state relative-caret-position="281">
+              <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+>>>>>>> parent of ad76636... changes
 =======
             <state relative-caret-position="281">
               <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
@@ -202,9 +218,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="14">
               <caret line="25" selection-start-line="25" selection-end-line="25" />
 =======
+=======
+>>>>>>> parent of ad76636... changes
 =======
 >>>>>>> parent of ad76636... changes
 =======
@@ -241,11 +260,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="150">
               <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+            <state relative-caret-position="165">
+              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-end-line="18" />
+>>>>>>> parent of ad76636... changes
 =======
             <state relative-caret-position="165">
               <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-end-line="18" />
@@ -344,8 +368,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557355680828" />
 =======
+=======
+>>>>>>> parent of ad76636... changes
 =======
 >>>>>>> parent of ad76636... changes
 =======
@@ -371,6 +398,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of ad76636... changes
+=======
 >>>>>>> parent of ad76636... changes
 =======
 >>>>>>> parent of ad76636... changes
@@ -437,7 +467,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2067239" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20386267" />
+>>>>>>> parent of ad76636... changes
 =======
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20386267" />
 >>>>>>> parent of ad76636... changes
@@ -478,7 +512,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" weight="0.3299363" />
+=======
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3299363" />
+>>>>>>> parent of ad76636... changes
 =======
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3299363" />
 >>>>>>> parent of ad76636... changes
@@ -562,7 +600,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/images/tile128Image.jpg">
+=======
+    <entry file="file://$PROJECT_DIR$/src/tile2Image.jpg">
+>>>>>>> parent of ad76636... changes
 =======
     <entry file="file://$PROJECT_DIR$/src/tile2Image.jpg">
 >>>>>>> parent of ad76636... changes
@@ -608,6 +650,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="150">
           <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding>
@@ -615,6 +658,8 @@
 =======
     <entry file="file://$PROJECT_DIR$/src/Grid.java">
       <provider selected="true" editor-type-id="text-editor">
+=======
+>>>>>>> parent of ad76636... changes
 =======
 >>>>>>> parent of ad76636... changes
 =======
@@ -658,6 +703,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of ad76636... changes
+=======
 >>>>>>> parent of ad76636... changes
 =======
 >>>>>>> parent of ad76636... changes
