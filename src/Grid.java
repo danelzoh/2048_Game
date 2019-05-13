@@ -57,4 +57,20 @@ public class Grid {
 
 	}
 
+	public static void moveUp(){
+
+	}
+
+	public static void moveDown(){
+
+	}
+
+	public static void moveLeft(){
+
+	}
+
+	public static void moveRight(){
+
+	}
+
 }

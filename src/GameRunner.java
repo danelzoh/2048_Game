@@ -80,18 +80,22 @@ public class GameRunner {
 		        timer.start();
 	}
 
-	private void moveUp() {
+	public void moveUp() {
+		Grid.moveUp();
 		System.out.println("moveUp");
 	}
 
 	private void moveDown() {
+		Grid.moveDown();
 		System.out.println("moveDown");
 	}
 
 	private void moveLeft() {
+		Grid.moveLeft();
 		System.out.println("moveLeft");
 	}
 	private void moveRight() {
+		Grid.moveRight();
 		System.out.println("moveRight");
 	}
 
