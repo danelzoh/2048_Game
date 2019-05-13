@@ -49,4 +49,12 @@ public class Tile {
     public void draw(Graphics g) {
     	g.drawImage(image, row*width, col*width, width,height, null);
     }
+
+    public int getRow() {
+        return this.getRow();
+    }
+    public int getCol(){
+        return this.getCol();
+    }
+
 }
