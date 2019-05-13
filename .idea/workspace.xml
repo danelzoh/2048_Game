@@ -1,75 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ecc064c-d306-41a9-89af-9a38f70289a1" name="Default Changelist" comment="">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-=======
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-      <change beforePath="$PROJECT_DIR$/out/production/2048_Game/GameRunner$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2048_Game/GameRunner$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2048_Game/GameRunner$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2048_Game/GameRunner$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2048_Game/GameRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2048_Game/GameRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameRunner.java" afterDir="false" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
+    <list default="true" id="c77afa8d-dc96-4d6c-a8d6-ef80124b5b13" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,310 +16,71 @@
     <session id="1318098010">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.7" value="1" />
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="1" />
-          <entry key="jpg" value="4" />
+          <entry key="java" value="3" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-<<<<<<< HEAD
-          <entry key="Image" value="4" />
-          <entry key="JAVA" value="1" />
-=======
-          <entry key="Image" value="2" />
-          <entry key="JAVA" value="10" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="463" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="463" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
+          <entry key="Enforced Plain Text" value="1" />
+          <entry key="JAVA" value="3" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tile.java">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <state>
-              <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#898#899#0" expanded="true" />
-                <element signature="e#971#972#0" expanded="true" />
-=======
-            <state relative-caret-position="281">
-              <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
->>>>>>> parent of ad76636... changes
-=======
-            <state relative-caret-position="281">
-              <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
->>>>>>> parent of ad76636... changes
-=======
-            <state relative-caret-position="281">
-              <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
->>>>>>> parent of ad76636... changes
-=======
-            <state relative-caret-position="281">
-              <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
->>>>>>> parent of ad76636... changes
-=======
-            <state relative-caret-position="281">
-              <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
->>>>>>> parent of ad76636... changes
-=======
-            <state relative-caret-position="281">
-              <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
->>>>>>> parent of ad76636... changes
-=======
-            <state relative-caret-position="281">
-              <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
->>>>>>> parent of ad76636... changes
-=======
-            <state relative-caret-position="281">
-              <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
->>>>>>> parent of ad76636... changes
-=======
-            <state relative-caret-position="281">
-              <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
->>>>>>> parent of ad76636... changes
-=======
-            <state relative-caret-position="281">
-              <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
->>>>>>> parent of ad76636... changes
-=======
-            <state relative-caret-position="281">
-              <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
->>>>>>> parent of ad76636... changes
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GameRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <state relative-caret-position="14">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-=======
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-            <state relative-caret-position="300">
-              <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-              <folding>
-                <element signature="e#1077#1263#0" expanded="true" />
-                <element signature="e#1262#1263#0" expanded="true" />
-              </folding>
->>>>>>> parent of ad76636... changes
+            <state relative-caret-position="30">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Grid.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Grid.java">
+        <entry file="file://$PROJECT_DIR$/src/Tile.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <state relative-caret-position="150">
-              <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-=======
-            <state relative-caret-position="165">
-              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-end-line="18" />
->>>>>>> parent of ad76636... changes
-=======
-            <state relative-caret-position="165">
-              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-end-line="18" />
->>>>>>> parent of ad76636... changes
-=======
-            <state relative-caret-position="165">
-              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-end-line="18" />
->>>>>>> parent of ad76636... changes
-=======
-            <state relative-caret-position="165">
-              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-end-line="18" />
->>>>>>> parent of ad76636... changes
-=======
-            <state relative-caret-position="165">
-              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-end-line="18" />
->>>>>>> parent of ad76636... changes
-=======
-            <state relative-caret-position="165">
-              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-end-line="18" />
->>>>>>> parent of ad76636... changes
-=======
-            <state relative-caret-position="165">
-              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-end-line="18" />
->>>>>>> parent of ad76636... changes
-=======
-            <state relative-caret-position="165">
-              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-end-line="18" />
->>>>>>> parent of ad76636... changes
-=======
-            <state relative-caret-position="165">
-              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-end-line="18" />
->>>>>>> parent of ad76636... changes
-=======
-            <state relative-caret-position="165">
-              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-end-line="18" />
->>>>>>> parent of ad76636... changes
-=======
-            <state relative-caret-position="165">
-              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-end-line="18" />
->>>>>>> parent of ad76636... changes
+            <state relative-caret-position="30">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/Grid.java" />
-        <option value="$PROJECT_DIR$/src/Tile.java" />
-        <option value="$PROJECT_DIR$/src/GameRunner.java" />
-      </list>
-    </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -396,86 +91,27 @@
             <path>
               <item name="2048_Game" type="b2602c69:ProjectViewProjectNode" />
               <item name="2048_Game" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2048_Game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2048_Game" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2048_Game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2048_Game" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557355680828" />
-=======
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557349242436" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557778044613" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -508,316 +144,70 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3ecc064c-d306-41a9-89af-9a38f70289a1" name="Default Changelist" comment="" />
-      <created>1556052147386</created>
+      <changelist id="c77afa8d-dc96-4d6c-a8d6-ef80124b5b13" name="Default Changelist" comment="" />
+      <created>1557705848161</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1556052147386</updated>
+      <updated>1557705848161</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <frame x="1440" y="-644" width="2560" height="1417" extended-state="6" />
     <layout>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2067239" />
-=======
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20386267" />
->>>>>>> parent of ad76636... changes
-=======
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20386267" />
->>>>>>> parent of ad76636... changes
-=======
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20386267" />
->>>>>>> parent of ad76636... changes
-=======
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20386267" />
->>>>>>> parent of ad76636... changes
-=======
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20386267" />
->>>>>>> parent of ad76636... changes
-=======
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20386267" />
->>>>>>> parent of ad76636... changes
-=======
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20386267" />
->>>>>>> parent of ad76636... changes
-=======
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20386267" />
->>>>>>> parent of ad76636... changes
-=======
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20386267" />
->>>>>>> parent of ad76636... changes
-=======
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20386267" />
->>>>>>> parent of ad76636... changes
-=======
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20386267" />
->>>>>>> parent of ad76636... changes
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24980143" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32872504" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3299363" />
-=======
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3299363" />
->>>>>>> parent of ad76636... changes
-=======
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3299363" />
->>>>>>> parent of ad76636... changes
-=======
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3299363" />
->>>>>>> parent of ad76636... changes
-=======
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3299363" />
->>>>>>> parent of ad76636... changes
-=======
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3299363" />
->>>>>>> parent of ad76636... changes
-=======
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3299363" />
->>>>>>> parent of ad76636... changes
-=======
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3299363" />
->>>>>>> parent of ad76636... changes
-=======
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3299363" />
->>>>>>> parent of ad76636... changes
-=======
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3299363" />
->>>>>>> parent of ad76636... changes
-=======
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3299363" />
->>>>>>> parent of ad76636... changes
-=======
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3299363" />
->>>>>>> parent of ad76636... changes
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32949308" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32484075" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3299363" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Tile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#971#972#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tiles.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/javax/swing/JComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="793" column="19" selection-start-line="793" selection-start-column="19" selection-end-line="793" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GameRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="30">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
-    </entry>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/images/tile128Image.jpg">
-=======
-    <entry file="file://$PROJECT_DIR$/src/tile2Image.jpg">
->>>>>>> parent of ad76636... changes
-=======
-    <entry file="file://$PROJECT_DIR$/src/tile2Image.jpg">
->>>>>>> parent of ad76636... changes
-=======
-    <entry file="file://$PROJECT_DIR$/src/tile2Image.jpg">
->>>>>>> parent of ad76636... changes
-=======
-    <entry file="file://$PROJECT_DIR$/src/tile2Image.jpg">
->>>>>>> parent of ad76636... changes
-=======
-    <entry file="file://$PROJECT_DIR$/src/tile2Image.jpg">
->>>>>>> parent of ad76636... changes
-=======
-    <entry file="file://$PROJECT_DIR$/src/tile2Image.jpg">
->>>>>>> parent of ad76636... changes
-=======
-    <entry file="file://$PROJECT_DIR$/src/tile2Image.jpg">
->>>>>>> parent of ad76636... changes
-=======
-    <entry file="file://$PROJECT_DIR$/src/tile2Image.jpg">
->>>>>>> parent of ad76636... changes
-=======
-    <entry file="file://$PROJECT_DIR$/src/tile2Image.jpg">
->>>>>>> parent of ad76636... changes
-=======
-    <entry file="file://$PROJECT_DIR$/src/tile2Image.jpg">
->>>>>>> parent of ad76636... changes
-=======
-    <entry file="file://$PROJECT_DIR$/src/tile2Image.jpg">
->>>>>>> parent of ad76636... changes
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/tile64Image.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/images/tile256Image.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/tile512Image.jpg">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Grid.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <state relative-caret-position="150">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/Grid.java">
-      <provider selected="true" editor-type-id="text-editor">
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-        <state relative-caret-position="165">
-          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-end-line="18" />
+        <state relative-caret-position="15">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-          <folding>
-            <element signature="e#1077#1263#0" expanded="true" />
-            <element signature="e#1262#1263#0" expanded="true" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-=======
->>>>>>> parent of ad76636... changes
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
