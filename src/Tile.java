@@ -57,4 +57,30 @@ public class Tile {
         return this.getCol();
     }
 
+
+
+    public void shiftUp(){
+        if(this.value > 0 /**&& col > 0**/){
+            this.col -= 1;
+        }
+    }
+
+    public void shiftDown(){
+        if(this.value > 0 /**&& col < 3**/){
+            this.col +=1;
+        }
+    }
+
+    public void shiftLeft(){
+        if(this.value > 0 /**&& row < 0**/){
+            this.row -=1;
+        }
+    }
+
+    public void shiftRight(){
+        if(this.value > 0 /**&& row > 3**/){
+            this.row +=1;
+        }
+    }
+
 }

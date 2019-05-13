@@ -81,21 +81,21 @@ public class GameRunner {
 	}
 
 	public void moveUp() {
-		Grid.moveUp();
+		grid.moveUp();
 		System.out.println("moveUp");
 	}
 
 	private void moveDown() {
-		Grid.moveDown();
+		grid.moveDown();
 		System.out.println("moveDown");
 	}
 
 	private void moveLeft() {
-		Grid.moveLeft();
+		grid.moveLeft();
 		System.out.println("moveLeft");
 	}
 	private void moveRight() {
-		Grid.moveRight();
+		grid.moveRight();
 		System.out.println("moveRight");
 	}
 

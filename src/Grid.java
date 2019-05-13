@@ -57,20 +57,36 @@ public class Grid {
 
 	}
 
-	public static void moveUp(){
-
+	public void moveUp(){
+		for(int r = 1; r<= 3; r++){
+			for(int c=0; c<=3; c++){
+				tiles[r][c].shiftUp();
+			}
+		}
 	}
 
-	public static void moveDown(){
-
+	public void moveDown(){
+		for(int r = 0; r<= 2; r++){
+			for(int c=0; c<=3; c++){
+				tiles[r][c].shiftDown();
+			}
+		}
 	}
 
-	public static void moveLeft(){
-
+	public void moveLeft(){
+		for(int r = 0; r<= 3; r++){
+			for(int c=1; c<=3; c++){
+				tiles[r][c].shiftLeft();
+			}
+		}
 	}
 
-	public static void moveRight(){
-
+	public void moveRight(){
+		for(int r = 0; r<= 3; r++){
+			for(int c=0; c<=2; c++){
+				tiles[r][c].shiftRight();
+			}
+		}
 	}
 
 }
