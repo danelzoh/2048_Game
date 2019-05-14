@@ -110,12 +110,12 @@ public class Grid {
 		for(int r = 3; r>= 0; r--){ //down to up
 			for(int c=0; c<=3; c++){ //left to right
 				int count = 0;
+				System.out.println(r-count +", "+ c);
 				while(canTileMoveDown(r - count,c)) {
 					//tiles[r][c].shiftUp();
 					Tile temp = new Tile(tiles[r+count][c].getValue() + tiles[r+1+count][c].getValue(),r + 1+count,c); //adds current tile with tile above
 					tiles[r + 1-count][c] = temp;
 					tiles[r+count][c] = new Tile(0,r+count,c);
-					System.out.println(r +""+ c);
 					count++;
 				}
 			}
