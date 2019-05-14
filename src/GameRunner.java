@@ -80,22 +80,22 @@ public class GameRunner {
 	}
 
 	public void moveUp() {
+		System.out.println("up key pressed");
 		grid.moveUp();
-		System.out.println("moveUp");
 	}
 
 	private void moveDown() {
+		System.out.println("down key pressed");
 		grid.moveDown();
-		System.out.println("moveDown");
 	}
 
 	private void moveLeft() {
+		System.out.println("left key pressed");
 		grid.moveLeft();
-		System.out.println("moveLeft");
 	}
 	private void moveRight() {
+		System.out.println("right key pressed");
 		grid.moveRight();
-		System.out.println("moveRight");
 	}
 
 
