@@ -160,8 +160,9 @@ public class Grid {
 
 	public void moveRight(){
 		for(int r = 0; r<=3; r++){ //top to bottom
-			for(int c=0; c<=2; c--){ //left to right
+			for(int c=0; c<=2; c++){ //left to right
 				int count = 0;
+				System.out.println(r + (c+count));
 				while(canTileMoveRight(r,c+count)) {
 					Tile temp = new Tile(tiles[r][c+count].getValue() + tiles[r][c+1+count].getValue(),r,c+1+count); //adds current tile with tile above
 					tiles[r][c+1+count] = temp;
