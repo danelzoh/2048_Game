@@ -80,8 +80,6 @@ public class Grid {
 		return false;
 	}
 
-
-
 	public void moveUp(){
 		for(int r = 1; r<= 3; r++){
 			for(int c=0; c<=3; c++){
@@ -135,14 +133,13 @@ public class Grid {
 	}
 
 	public void moveLeft(){ //doesnt work yet
-		for(int r = 0; r<=3; r++){
-			for(int c=3; c>=1; c--){
+		for(int r = 0; r<=3; r++){ //top to bottom
+			for(int c=3; c>=1; c--){ //right to left
 				int count = 0;
 				while(canTileMoveLeft(r,c-count)) {
-					//tiles[r][c].shiftUp();
 					Tile temp = new Tile(tiles[r][c-count].getValue() + tiles[r][c-1-count].getValue(),r,c-1-count); //adds current tile with tile above
 					tiles[r][c-1-count] = temp;
-					tiles[r][c-1-count] = new Tile(0,r,c-count);
+					tiles[r][c-1-count] = new Tile(0,r,c+count);
 					//System.out.println(r + " " + c);
 					count++;
 				}
