@@ -18,7 +18,6 @@ public class GameRunner {
 
 	public static void main(String[] args) {
 
-
 		new GameRunner().start();
 	}
 
@@ -42,42 +41,42 @@ public class GameRunner {
 		System.out.println("test");
 
 		if (panel.requestFocus(true))
-            System.out.println("true");
-         ;
-         
+			System.out.println("true");
+		;
+
 		panel.addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyPressed(KeyEvent e) {
 				System.out.println("Key pressed");
 				switch (e.getKeyCode()) {
-				case KeyEvent.VK_UP:
-					moveUp();
-					break;
-				case KeyEvent.VK_DOWN:
-					moveDown();
-					break;
-				case KeyEvent.VK_LEFT:
-					moveLeft();
-					break;
-				case KeyEvent.VK_RIGHT:
-					moveRight();
-					break;
+					case KeyEvent.VK_UP:
+						moveUp();
+						break;
+					case KeyEvent.VK_DOWN:
+						moveDown();
+						break;
+					case KeyEvent.VK_LEFT:
+						moveLeft();
+						break;
+					case KeyEvent.VK_RIGHT:
+						moveRight();
+						break;
 				}
 				panel.repaint();
 			}
 		});
 
-				panel.repaint();
+		panel.repaint();
 
-		        timer = new Timer(REFRESH_RATE, new ActionListener() {
-			            @Override
-		            public void actionPerformed(ActionEvent arg0) {
-		                //updateGame();
-			            //System.out.println("Action pressed");
-		                panel.repaint();
-		            }
-		        });
-		        timer.start();
+		timer = new Timer(REFRESH_RATE, new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				//updateGame();
+				//System.out.println("Action pressed");
+				panel.repaint();
+			}
+		});
+		timer.start();
 	}
 
 	public void moveUp() {

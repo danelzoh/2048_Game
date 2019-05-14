@@ -20,19 +20,19 @@ public class Tile {
         col = c;
         getImage("tile"+v+"Image.jpg");
         System.out.println("tile"+v+"Image.jpg");
-        
+
     }
 
     public int getValue() {
-		return value;
-	}
+        return value;
+    }
 
-	public void setValue(int value) {
-		this.value = value;
-		getImage("tile"+value+"Image.jpg");
-	}
+    public void setValue(int value) {
+        this.value = value;
+        getImage("tile"+value+"Image.jpg");
+    }
 
-	public void setColor(Tile tile){
+    public void setColor(Tile tile){
         color = (new Color(value, value, 0));
     }
 
@@ -45,9 +45,9 @@ public class Tile {
             e.printStackTrace();
         }
     }
-    
+
     public void draw(Graphics g) {
-    	g.drawImage(image, row*width, col*width, width,height, null);
+        g.drawImage(image, col*width, row*width, width,height, null);
     }
 
     public int getRow() {
@@ -58,10 +58,10 @@ public class Tile {
     }
 
 
-
     public void shiftUp(){
         if(this.value > 0 /**&& col > 0**/){
             this.col -= 1;
+
         }
     }
 
