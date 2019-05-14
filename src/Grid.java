@@ -80,6 +80,8 @@ public class Grid {
 		return false;
 	}
 
+
+
 	public void moveUp(){
 		for(int r = 1; r<= 3; r++){
 			for(int c=0; c<=3; c++){
@@ -97,13 +99,32 @@ public class Grid {
 		randTile();
 	}
 
-	public void moveDown(){
-		for(int r = 0; r<= 2; r++){
-			for(int c=0; c<=3; c++){
-				tiles[r][c].shiftDown();
+	public boolean canTileMoveDown(int r, int c) {
+		if(r!=3 && tiles[r][c].getValue() != 0) {
+			if(tiles[r+1][c].getValue() == 0 || tiles[r][c].getValue() == tiles[r+1][c].getValue()) {
+				return true;
 			}
 		}
+		return false;
 	}
+
+	public void moveDown(){
+		for(int r = 3; r>= 0; r--){
+			for(int c=0; c<=3; c++){
+				int count = 0;
+				while(canTileMoveDown(r - count,c)) {
+					//tiles[r][c].shiftUp();
+					Tile temp = new Tile(tiles[r+count][c].getValue() + tiles[r+1+count][c].getValue(),r + 1+count,c); //adds current tile with tile above
+					tiles[r + 1-count][c] = temp;
+					tiles[r+count][c] = new Tile(0,r+count,c);
+					//System.out.println(r + " " + c);
+					count++;
+				}
+			}
+		}
+		randTile();
+	}
+
 
 	public void moveLeft(){
 		for(int r = 0; r<= 3; r++){
