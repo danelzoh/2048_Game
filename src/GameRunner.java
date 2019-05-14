@@ -79,6 +79,10 @@ public class GameRunner {
 		timer.start();
 	}
 
+	public void gameOver(){
+
+	}
+
 	public void moveUp() {
 		System.out.println("up key pressed");
 		grid.moveUp();
