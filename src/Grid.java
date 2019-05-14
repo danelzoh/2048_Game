@@ -56,7 +56,10 @@ public class Grid {
 	public void randTile() {
 
 	}
-
+	
+	/* depending on which direction the tiles are supposed to move,
+	*  we will need to loop through the array differently.
+	*/
 	public void moveUp(){
 		for(int r = 1; r<= 3; r++){
 			for(int c=0; c<=3; c++){
