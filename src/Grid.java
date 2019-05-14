@@ -16,31 +16,36 @@ public class Grid {
 			}
 		}
 
-		int tempRow = (int) (tiles.length * Math.random());
+
+
+		randTile();
+		randTile();
+
+		/*int tempRow = (int) (tiles.length * Math.random());
 		int tempCol = (int) (tiles[0].length * Math.random());
 
 
 		int tempRow2 = (int) (tiles.length * Math.random());
 		int tempCol2 = (int) (tiles[0].length * Math.random());
-		
+
 		while (tempRow == tempRow2) {
 			tempRow2 = (int) (tiles.length * Math.random());
 		}
 		while (tempCol == tempCol2) {
 			tempRow2 = (int) (tiles[0].length * Math.random());
 		}
-		
+
 
 
 		tiles[tempRow][tempCol].setValue(2);
 		tiles[tempRow2][tempCol2].setValue(2);
-		
-		
+
+*/
 		//tiles[tempRow2][tempCol2].setValue(2);
 
 
-		//		tiles[(int) (tiles.length * Math.random())][(int) (tiles[0].length * Math.random())] 
-		//				
+		//		tiles[(int) (tiles.length * Math.random())][(int) (tiles[0].length * Math.random())]
+		//
 		//				= new Tile (2, (int) (tiles.length * Math.random()), (int) (tiles[0].length * Math.random()));
 	}
 
@@ -54,42 +59,121 @@ public class Grid {
 	}
 
 	public void randTile() {
+		boolean done = false;
+		while(!done) {
+			int row = (int)(Math.random()*4);
+			int col = (int)(Math.random()*4);
+			if(tiles[row][col].getValue() == 0) {
+				tiles[row][col] = new Tile(2, row, col);
+				done = true;
+			}
+			//System.out.println("inside randTile");
+		}
+	}
 
+	public boolean canTileMoveUp(int r, int c) {
+		if(r!=0 && tiles[r][c].getValue() != 0) {
+			if(tiles[r-1][c].getValue() == 0 || tiles[r][c].getValue() == tiles[r-1][c].getValue()) {
+				return true;
+			}
+		}
+		return false;
 	}
 	
 	/* depending on which direction the tiles are supposed to move,
 	*  we will need to loop through the array differently.
 	*/
 	public void moveUp(){
-		for(int r = 1; r<= 3; r++){
-			for(int c=0; c<=3; c++){
-				tiles[r][c].shiftUp();
+		for(int r = 1; r<= 3; r++){ //up to down
+			for(int c=0; c<=3; c++){ //left to right
+				int count = 0;
+				while(canTileMoveUp(r - count,c)) {
+					//tiles[r][c].shiftUp();
+					Tile temp = new Tile(tiles[r-count][c].getValue() + tiles[r-1-count][c].getValue(),r - 1-count,c); //adds current tile with tile above
+					tiles[r - 1-count][c] = temp;
+					tiles[r-count][c] = new Tile(0,r-count,c);
+					//System.out.println(r + " " + c);
+					count++;
+				}
 			}
 		}
+		randTile();
+	}
+
+	public boolean canTileMoveDown(int r, int c) {
+		if(r!=3 && tiles[r][c].getValue() != 0) {
+			if(tiles[r+1][c].getValue() == 0 || tiles[r][c].getValue() == tiles[r+1][c].getValue()) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 	public void moveDown(){
-		for(int r = 0; r<= 2; r++){
-			for(int c=0; c<=3; c++){
-				tiles[r][c].shiftDown();
+		for(int r = 3; r>= 0; r--){ //down to up
+			for(int c=0; c<=3; c++){ //left to right
+				int count = 0;
+				System.out.println(r-count +", "+ c);
+				while(canTileMoveDown(r - count,c)) {
+					//tiles[r][c].shiftUp();
+					Tile temp = new Tile(tiles[r+count][c].getValue() + tiles[r+1+count][c].getValue(),r + 1+count,c); //adds current tile with tile above
+					tiles[r + 1-count][c] = temp;
+					tiles[r+count][c] = new Tile(0,r+count,c);
+					count++;
+				}
 			}
 		}
+		randTile();
+	}
+
+	public boolean canTileMoveLeft(int r, int c) {
+		if(c!=0 && tiles[r][c].getValue() != 0) {
+			if(tiles[r][c-1].getValue() == 0 || tiles[r][c].getValue() == tiles[r][c-1].getValue()) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 	public void moveLeft(){
-		for(int r = 0; r<= 3; r++){
-			for(int c=1; c<=3; c++){
-				tiles[r][c].shiftLeft();
+		for(int r = 0; r<=3; r++){ //top to bottom
+			for(int c=3; c>=1; c--){ //right to left
+				int count = 0;
+				while(canTileMoveLeft(r,c-count)) {
+					Tile temp = new Tile(tiles[r][c-count].getValue() + tiles[r][c-1-count].getValue(),r,c-1-count); //adds current tile with tile above
+					tiles[r][c-1-count] = temp;
+					tiles[r][c-count] = new Tile(0,r,c-count);
+					//System.out.println(r + " " + c);
+					count++;
+				}
 			}
 		}
+		randTile();
+	}
+
+	public boolean canTileMoveRight(int r, int c) {
+		if(c!=3 && tiles[r][c].getValue() != 0) {
+			if(tiles[r][c+1].getValue() == 0 || tiles[r][c].getValue() == tiles[r][c+1].getValue()) {
+				System.out.println("can move right");
+				return true;
+			}
+		}
+		return false;
 	}
 
 	public void moveRight(){
-		for(int r = 0; r<= 3; r++){
-			for(int c=0; c<=2; c++){
-				tiles[r][c].shiftRight();
+		for(int r = 0; r<=3; r++){ //top to bottom
+			for(int c=0; c<=2; c++){ //left to right
+				int count = 0;
+				System.out.println(r + (c+count));
+				while(canTileMoveRight(r,c+count)) {
+					Tile temp = new Tile(tiles[r][c+count].getValue() + tiles[r][c+1+count].getValue(),r,c+1+count); //adds current tile with tile above
+					tiles[r][c+1+count] = temp;
+					tiles[r][c+count] = new Tile(0,r,c+count);
+					count++;
+				}
 			}
 		}
+		randTile();
 	}
-
 }
