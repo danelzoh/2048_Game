@@ -79,6 +79,14 @@ public class Grid {
 		return false;
 	}
 
+	/* depending on which direction the tiles are supposed to move,
+	*  we will need to loop through the array differently.
+	*/
+	public void moveUp(){
+		for(int r = 1; r<= 3; r++){ //up to down
+			for(int c=0; c<=3; c++){ //left to right
+
+
 	public void moveUp() {
 		int gameOverChecker = 0;
 		for (int r = 1; r <= 3; r++) { //up to down
