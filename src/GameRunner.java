@@ -80,27 +80,40 @@ public class GameRunner {
 	}
 
 	public void gameOver(){
-
+		/*show a "GAME OVER" screen
+		add an option to restart the game
+		*/
+		
+		//Tile end = new Tile(-1, 2, 2);
+		//end.getImage("tile-1Image.jpg");
+		
+		
+		JOptionPane.showMessageDialog(null, "loser");
+		//for some reason, the dialogue box will be shown on instances of moveUp() where none of the tiles move
+		
+		
+		//System.out.println("GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMMMMMMMMMMMMMMMMMMMMMEEEEEEEEEEEEEEEEEEEEOOOOOOOOOOOOOOOOOVVVVVVVVVVVVVVVEEEEEEEEEEEEEERRR");
+		
 	}
 
 	public void moveUp() {
 		System.out.println("up key pressed");
-		grid.moveUp();
+		grid.moveUp(this);
 	}
 
 	private void moveDown() {
 		System.out.println("down key pressed");
-		grid.moveDown();
+		grid.moveDown(this);
 	}
 
 	private void moveLeft() {
 		System.out.println("left key pressed");
-		grid.moveLeft();
+		grid.moveLeft(this);
 	}
 	private void moveRight() {
 		System.out.println("right key pressed");
-		grid.moveRight();
+		grid.moveRight(this);
 	}
-
+	
 
 }

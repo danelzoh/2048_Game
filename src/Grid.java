@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
+import javax.swing.JPanel;
 public class Grid {
 
 	private Tile[][] tiles = new Tile[4][4];
@@ -82,7 +83,9 @@ public class Grid {
 	/* depending on which direction the tiles are supposed to move,
 	*  we will need to loop through the array differently.
 	*/
-	public void moveUp() {
+	public void moveUp(GameRunner gr) {
+		//DOES NOT MAKE A NEW TILE ON AN INVALID MOVE
+		//makes a game over dialogue box even when the game is not over
 		int gameOverChecker = 0;
 		for (int r = 1; r <= 3; r++) { //up to down
 			for (int c = 0; c <= 3; c++) { //left to right
@@ -102,6 +105,7 @@ public class Grid {
 		}
 		if (gameOverChecker == 0) {
 			System.out.println("game over");
+			gr.gameOver();
 		} else {
 			randTile();
 		}
@@ -116,7 +120,8 @@ public class Grid {
 		return false;
 	}
 
-	public void moveDown() {
+	public void moveDown(GameRunner gr) {
+		//makes a new tile even if an invalid move is made
 		int gameOverChecker = 0;
 		for (int r = 3; r >= 0; r--) { //down to up
 			for (int c = 0; c <= 3; c++) { //left to right
@@ -136,6 +141,7 @@ public class Grid {
 		}
 		if (gameOverChecker == 0) {
 			System.out.println("game over");
+			gr.gameOver();
 		} else {
 			randTile();
 		}
@@ -150,7 +156,8 @@ public class Grid {
 		return false;
 	}
 
-	public void moveLeft() {
+	public void moveLeft(GameRunner gr) {
+		//makes a new tile even if an invalid move is made
 		int gameOverChecker = 0;
 		for (int r = 0; r <= 3; r++) { //top to bottom
 			for (int c = 1; c <= 3; c++) { //right to left
@@ -169,6 +176,7 @@ public class Grid {
 		}
 		if (gameOverChecker == 0) {
 			System.out.println("game over");
+			gr.gameOver();
 		} else {
 			randTile();
 		}
@@ -184,7 +192,8 @@ public class Grid {
 		return false;
 	}
 
-	public void moveRight() {
+	public void moveRight(GameRunner gr) {
+		//makes a new tile even if an invalid move is made
 		int gameOverChecker = 0;
 		for (int r = 0; r <= 3; r++) { //top to bottom
 			for (int c = 2; c >= 0; c--) { //left to right
@@ -196,11 +205,14 @@ public class Grid {
 					tiles[r][c + count] = new Tile(0, r, c + count);
 					count++;
 				}
+				if (tiles[r][c].getValue() == 0) {
+					gameOverChecker += 1;
+				}
 			}
-			System.out.println();
 		}
 		if (gameOverChecker == 0) {
 			System.out.println("game over");
+			gr.gameOver();
 		} else {
 			randTile();
 		}
