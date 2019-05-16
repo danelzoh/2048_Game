@@ -82,11 +82,6 @@ public class Grid {
 	/* depending on which direction the tiles are supposed to move,
 	*  we will need to loop through the array differently.
 	*/
-	public void moveUp(){
-		for(int r = 1; r<= 3; r++){ //up to down
-			for(int c=0; c<=3; c++){ //left to right
-
-
 	public void moveUp() {
 		int gameOverChecker = 0;
 		for (int r = 1; r <= 3; r++) { //up to down
@@ -158,7 +153,7 @@ public class Grid {
 	public void moveLeft() {
 		int gameOverChecker = 0;
 		for (int r = 0; r <= 3; r++) { //top to bottom
-			for (int c = 3; c >= 1; c--) { //right to left
+			for (int c = 1; c <= 2; c++) { //right to left
 				int count = 0;
 				while (canTileMoveLeft(r, c - count)) {
 					Tile temp = new Tile(tiles[r][c - count].getValue() + tiles[r][c - 1 - count].getValue(), r, c - 1 - count); //adds current tile with tile above
@@ -192,7 +187,7 @@ public class Grid {
 	public void moveRight() {
 		int gameOverChecker = 0;
 		for (int r = 0; r <= 3; r++) { //top to bottom
-			for (int c = 0; c <= 2; c++) { //left to right
+			for (int c = 2; c == 0; c--) { //left to right
 				int count = 0;
 				System.out.println(r + (c + count));
 				while (canTileMoveRight(r, c + count)) {
