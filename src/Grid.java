@@ -92,7 +92,7 @@ public class Grid {
 					Tile temp = new Tile(tiles[r - count][c].getValue() + tiles[r - 1 - count][c].getValue(), r - 1 - count, c); //adds current tile with tile above
 					tiles[r - 1 - count][c] = temp;
 					tiles[r - count][c] = new Tile(0, r - count, c);
-					//System.out.println(r + " " + c);
+					System.out.println(r + " " + c);
 					count++;
 					if (tiles[r][c].getValue() == 0) {
 						gameOverChecker += 1;
@@ -153,13 +153,13 @@ public class Grid {
 	public void moveLeft() {
 		int gameOverChecker = 0;
 		for (int r = 0; r <= 3; r++) { //top to bottom
-			for (int c = 1; c <= 2; c++) { //right to left
+			for (int c = 1; c <= 3; c++) { //right to left
 				int count = 0;
 				while (canTileMoveLeft(r, c - count)) {
 					Tile temp = new Tile(tiles[r][c - count].getValue() + tiles[r][c - 1 - count].getValue(), r, c - 1 - count); //adds current tile with tile above
 					tiles[r][c - 1 - count] = temp;
 					tiles[r][c - count] = new Tile(0, r, c - count);
-					//System.out.println(r + " " + c);
+					System.out.println(r + " " + c);
 					count++;
 				}
 				if (tiles[r][c].getValue() == 0) {
@@ -187,7 +187,7 @@ public class Grid {
 	public void moveRight() {
 		int gameOverChecker = 0;
 		for (int r = 0; r <= 3; r++) { //top to bottom
-			for (int c = 2; c == 0; c--) { //left to right
+			for (int c = 2; c >= 0; c--) { //left to right
 				int count = 0;
 				System.out.println(r + (c + count));
 				while (canTileMoveRight(r, c + count)) {
@@ -197,6 +197,7 @@ public class Grid {
 					count++;
 				}
 			}
+			System.out.println();
 		}
 		if (gameOverChecker == 0) {
 			System.out.println("game over");
