@@ -93,9 +93,11 @@ public class GameRunner {
 		
 		JOptionPane.showMessageDialog(null, "loser");
 		//for some reason, the dialogue box will be shown on instances of moveUp() where none of the tiles move
-		
-		
 
+	}
+
+	public Points getPoints(){
+		return points;
 	}
 
 	public void moveUp() {
