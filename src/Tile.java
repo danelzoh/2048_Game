@@ -6,7 +6,7 @@ import java.sql.SQLOutput;
 public class Tile {
     private int value;
     private int row, col;
-    static int height = 100, width = 100;
+    public static final int height = 100, width = 100;
     boolean canMerge;
     private Color color;
     private Image image;

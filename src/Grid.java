@@ -16,37 +16,9 @@ public class Grid {
 				tiles[row][col] = new Tile(0, row, col);
 			}
 		}
-
-
+		
 		randTile();
 		randTile();
-
-		/*int tempRow = (int) (tiles.length * Math.random());
-		int tempCol = (int) (tiles[0].length * Math.random());
-
-
-		int tempRow2 = (int) (tiles.length * Math.random());
-		int tempCol2 = (int) (tiles[0].length * Math.random());
-
-		while (tempRow == tempRow2) {
-			tempRow2 = (int) (tiles.length * Math.random());
-		}
-		while (tempCol == tempCol2) {
-			tempRow2 = (int) (tiles[0].length * Math.random());
-		}
-
-
-
-		tiles[tempRow][tempCol].setValue(2);
-		tiles[tempRow2][tempCol2].setValue(2);
-
-*/
-		//tiles[tempRow2][tempCol2].setValue(2);
-
-
-		//		tiles[(int) (tiles.length * Math.random())][(int) (tiles[0].length * Math.random())]
-		//
-		//				= new Tile (2, (int) (tiles.length * Math.random()), (int) (tiles[0].length * Math.random()));
 	}
 
 	public void draw(Graphics g) {

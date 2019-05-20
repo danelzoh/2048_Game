@@ -15,6 +15,7 @@ public class GameRunner {
 	private Timer timer;
 	private static final int REFRESH_RATE = 10;
 	private Grid grid;
+	private Points points;
 
 	public static void main(String[] args) {
 
@@ -25,11 +26,13 @@ public class GameRunner {
 		JFrame frame = new JFrame("Board");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		grid = new Grid();
+		points = new Points();
 		panel = new JPanel() {
 			@Override
 			public void paintComponent(Graphics g) {
 				super.paintComponent(g);
 				grid.draw(g);
+				points.draw(g);
 			}
 		};
 		panel.setLayout(null);
@@ -92,8 +95,7 @@ public class GameRunner {
 		//for some reason, the dialogue box will be shown on instances of moveUp() where none of the tiles move
 		
 		
-		//System.out.println("GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMMMMMMMMMMMMMMMMMMMMMEEEEEEEEEEEEEEEEEEEEOOOOOOOOOOOOOOOOOVVVVVVVVVVVVVVVEEEEEEEEEEEEEERRR");
-		
+
 	}
 
 	public void moveUp() {
