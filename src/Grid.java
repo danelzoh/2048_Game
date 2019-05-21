@@ -39,7 +39,6 @@ public class Grid {
 				tiles[row][col] = new Tile(2, row, col);
 				done = true;
 			}
-			//System.out.println("inside randTile");
 		}
 	}
 
@@ -52,12 +51,8 @@ public class Grid {
 		return false;
 	}
 
-	/* depending on which direction the tiles are supposed to move,
-	*  we will need to loop through the array differently.
-	*/
 	public void moveUp(GameRunner gr) {
-		//DOES NOT MAKE A NEW TILE ON AN INVALID MOVE
-		//makes a game over dialogue box even when the game is not over
+		//makes a game over dialogue box even when the game is not over if no tiles move
 		int gameOverChecker = 0;
 		for (int r = 1; r <= 3; r++) { //up to down
 			for (int c = 0; c <= 3; c++) { //left to right
