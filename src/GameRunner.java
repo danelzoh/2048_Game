@@ -36,7 +36,7 @@ public class GameRunner {
 			}
 		};
 		panel.setLayout(null);
-		panel.setBackground(new Color(74, 232, 143));
+		panel.setBackground(new Color(205, 192, 181));
 		panel.setPreferredSize(new Dimension(1200, 800));
 		frame.add(panel);
 		frame.pack();
