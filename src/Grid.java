@@ -16,7 +16,7 @@ public class Grid {
 				tiles[row][col] = new Tile(0, row, col);
 			}
 		}
-
+		
 		randTile();
 		randTile();
 	}
@@ -60,7 +60,6 @@ public class Grid {
 				while (canTileMoveUp(r - count, c)) {
 					//tiles[r][c].shiftUp();
 					Tile temp = new Tile(tiles[r - count][c].getValue() + tiles[r - 1 - count][c].getValue(), r - 1 - count, c); //adds current tile with tile above
-					gr.getPoints().add(temp.getValue());
 					tiles[r - 1 - count][c] = temp;
 					tiles[r - count][c] = new Tile(0, r - count, c);
 					System.out.println(r + " " + c);
@@ -98,7 +97,6 @@ public class Grid {
 				while (canTileMoveDown(r + count, c)) {
 					//tiles[r][c].shiftUp();
 					Tile temp = new Tile(tiles[r + count][c].getValue() + tiles[r + 1 + count][c].getValue(), r + 1 + count, c); //adds current tile with tile above
-					gr.getPoints().add(temp.getValue());
 					tiles[r + 1 + count][c] = temp;
 					tiles[r + count][c] = new Tile(0, r + count, c);
 					count++;
@@ -133,7 +131,6 @@ public class Grid {
 				int count = 0;
 				while (canTileMoveLeft(r, c - count)) {
 					Tile temp = new Tile(tiles[r][c - count].getValue() + tiles[r][c - 1 - count].getValue(), r, c - 1 - count); //adds current tile with tile above
-					gr.getPoints().add(temp.getValue());
 					tiles[r][c - 1 - count] = temp;
 					tiles[r][c - count] = new Tile(0, r, c - count);
 					System.out.println(r + " " + c);
@@ -171,7 +168,6 @@ public class Grid {
 				System.out.println(r + (c + count));
 				while (canTileMoveRight(r, c + count)) {
 					Tile temp = new Tile(tiles[r][c + count].getValue() + tiles[r][c + 1 + count].getValue(), r, c + 1 + count); //adds current tile with tile above
-					gr.getPoints().add(temp.getValue());
 					tiles[r][c + 1 + count] = temp;
 					tiles[r][c + count] = new Tile(0, r, c + count);
 					count++;

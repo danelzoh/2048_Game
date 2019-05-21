@@ -9,7 +9,7 @@ import javax.swing.JPanel;
 public class Points {
     private int score = 0;
 
-    public void add(int v){
+    private void add(int v){
         score += v;
     }
 
@@ -18,7 +18,7 @@ public class Points {
 
         g.setFont(new Font("Helvetica Bold", Font.BOLD, fontSize));
         g.setColor(Color.white);
-        g.drawString("Score: "+score, (Tile.width*4)+20, 75);
+        g.drawString(""+score, (Tile.width*4)+20, 75);
     }
 }
 
