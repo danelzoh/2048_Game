@@ -16,7 +16,7 @@ public class Grid {
 				tiles[row][col] = new Tile(0, row, col);
 			}
 		}
-		
+
 		randTile();
 		randTile();
 	}
@@ -39,6 +39,7 @@ public class Grid {
 				tiles[row][col] = new Tile(2, row, col);
 				done = true;
 			}
+			//System.out.println("inside randTile");
 		}
 	}
 
@@ -51,8 +52,12 @@ public class Grid {
 		return false;
 	}
 
+	/* depending on which direction the tiles are supposed to move,
+	*  we will need to loop through the array differently.
+	*/
 	public void moveUp(GameRunner gr) {
-		//makes a game over dialogue box even when the game is not over if no tiles move
+		//DOES NOT MAKE A NEW TILE ON AN INVALID MOVE
+		//makes a game over dialogue box even when the game is not over
 		int gameOverChecker = 0;
 		for (int r = 1; r <= 3; r++) { //up to down
 			for (int c = 0; c <= 3; c++) { //left to right
@@ -60,6 +65,7 @@ public class Grid {
 				while (canTileMoveUp(r - count, c)) {
 					//tiles[r][c].shiftUp();
 					Tile temp = new Tile(tiles[r - count][c].getValue() + tiles[r - 1 - count][c].getValue(), r - 1 - count, c); //adds current tile with tile above
+					gr.getPoints().add(temp.getValue());
 					tiles[r - 1 - count][c] = temp;
 					tiles[r - count][c] = new Tile(0, r - count, c);
 					System.out.println(r + " " + c);
@@ -97,6 +103,7 @@ public class Grid {
 				while (canTileMoveDown(r + count, c)) {
 					//tiles[r][c].shiftUp();
 					Tile temp = new Tile(tiles[r + count][c].getValue() + tiles[r + 1 + count][c].getValue(), r + 1 + count, c); //adds current tile with tile above
+					gr.getPoints().add(temp.getValue());
 					tiles[r + 1 + count][c] = temp;
 					tiles[r + count][c] = new Tile(0, r + count, c);
 					count++;
@@ -131,6 +138,7 @@ public class Grid {
 				int count = 0;
 				while (canTileMoveLeft(r, c - count)) {
 					Tile temp = new Tile(tiles[r][c - count].getValue() + tiles[r][c - 1 - count].getValue(), r, c - 1 - count); //adds current tile with tile above
+					gr.getPoints().add(temp.getValue());
 					tiles[r][c - 1 - count] = temp;
 					tiles[r][c - count] = new Tile(0, r, c - count);
 					System.out.println(r + " " + c);
@@ -168,6 +176,7 @@ public class Grid {
 				System.out.println(r + (c + count));
 				while (canTileMoveRight(r, c + count)) {
 					Tile temp = new Tile(tiles[r][c + count].getValue() + tiles[r][c + 1 + count].getValue(), r, c + 1 + count); //adds current tile with tile above
+					gr.getPoints().add(temp.getValue());
 					tiles[r][c + 1 + count] = temp;
 					tiles[r][c + count] = new Tile(0, r, c + count);
 					count++;
