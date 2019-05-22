@@ -10,6 +10,7 @@ public class Tile {
     boolean canMerge;
     private Color color;
     private Image image;
+    public boolean hasAdded;
 
     public final static String PATH_PREFIX = "/images/";
 
