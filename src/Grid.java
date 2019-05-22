@@ -69,6 +69,7 @@ public class Grid {
 					}
 					tiles[r - 1 - count][c] = temp;
 					tiles[r - count][c] = new Tile(0, r - count, c);
+
 					count++;
 					if (tiles[r][c].getValue() == 0) {
 						gameOverChecker += 1;

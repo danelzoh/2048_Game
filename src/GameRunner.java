@@ -41,16 +41,13 @@ public class GameRunner {
 		frame.add(panel);
 		frame.pack();
 		frame.setVisible(true);
-		System.out.println("test");
 
 		if (panel.requestFocus(true))
-			System.out.println("true");
 		;
 
 		panel.addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyPressed(KeyEvent e) {
-				System.out.println("Key pressed");
 				switch (e.getKeyCode()) {
 					case KeyEvent.VK_UP:
 						moveUp();
@@ -74,8 +71,6 @@ public class GameRunner {
 		timer = new Timer(REFRESH_RATE, new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				//updateGame();
-				//System.out.println("Action pressed");
 				panel.repaint();
 			}
 		});
@@ -83,13 +78,6 @@ public class GameRunner {
 	}
 
 	public void gameOver(){
-		/*show a "GAME OVER" screen
-		add an option to restart the game
-		*/
-		
-		//Tile end = new Tile(-1, 2, 2);
-		//end.getImage("tile-1Image.jpg");
-		
 		
 		JOptionPane.showMessageDialog(null, "loser");
 		//for some reason, the dialogue box will be shown on instances of moveUp() where none of the tiles move
@@ -101,21 +89,17 @@ public class GameRunner {
 	}
 
 	public void moveUp() {
-		System.out.println("up key pressed");
 		grid.moveUp(this);
 	}
 
 	private void moveDown() {
-		System.out.println("down key pressed");
 		grid.moveDown(this);
 	}
 
 	private void moveLeft() {
-		System.out.println("left key pressed");
 		grid.moveLeft(this);
 	}
 	private void moveRight() {
-		System.out.println("right key pressed");
 		grid.moveRight(this);
 	}
 	
