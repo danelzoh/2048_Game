@@ -65,7 +65,9 @@ public class Grid {
 				while (canTileMoveUp(r - count, c)) {
 					//tiles[r][c].shiftUp();
 					Tile temp = new Tile(tiles[r - count][c].getValue() + tiles[r - 1 - count][c].getValue(), r - 1 - count, c); //adds current tile with tile above
-					gr.getPoints().add(temp.getValue());
+					if(temp.getValue()!=0){
+						gr.getPoints().add(temp.getValue());
+					}
 					tiles[r - 1 - count][c] = temp;
 					tiles[r - count][c] = new Tile(0, r - count, c);
 					System.out.println(r + " " + c);
