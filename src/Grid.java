@@ -39,7 +39,6 @@ public class Grid {
 				tiles[row][col] = new Tile(2, row, col);
 				done = true;
 			}
-			//System.out.println("inside randTile");
 		}
 	}
 
@@ -70,7 +69,6 @@ public class Grid {
 					}
 					tiles[r - 1 - count][c] = temp;
 					tiles[r - count][c] = new Tile(0, r - count, c);
-					System.out.println(r + " " + c);
 					count++;
 					if (tiles[r][c].getValue() == 0) {
 						gameOverChecker += 1;
@@ -79,7 +77,6 @@ public class Grid {
 			}
 		}
 		if (gameOverChecker == 0) {
-			System.out.println("game over");
 			gr.gameOver();
 		} else {
 			randTile();
@@ -96,14 +93,11 @@ public class Grid {
 	}
 
 	public void moveDown(GameRunner gr) {
-		//makes a new tile even if an invalid move is made
 		int gameOverChecker = 0;
 		for (int r = 3; r >= 0; r--) { //down to up
 			for (int c = 0; c <= 3; c++) { //left to right
 				int count = 0;
-				System.out.println(r - count + ", " + c);
 				while (canTileMoveDown(r + count, c)) {
-					//tiles[r][c].shiftUp();
 					Tile temp = new Tile(tiles[r + count][c].getValue() + tiles[r + 1 + count][c].getValue(), r + 1 + count, c); //adds current tile with tile above
 					gr.getPoints().add(temp.getValue());
 					tiles[r + 1 + count][c] = temp;
@@ -116,7 +110,6 @@ public class Grid {
 			}
 		}
 		if (gameOverChecker == 0) {
-			System.out.println("game over");
 			gr.gameOver();
 		} else {
 			randTile();
@@ -133,7 +126,6 @@ public class Grid {
 	}
 
 	public void moveLeft(GameRunner gr) {
-		//makes a new tile even if an invalid move is made
 		int gameOverChecker = 0;
 		for (int r = 0; r <= 3; r++) { //top to bottom
 			for (int c = 1; c <= 3; c++) { //right to left
@@ -143,7 +135,6 @@ public class Grid {
 					gr.getPoints().add(temp.getValue());
 					tiles[r][c - 1 - count] = temp;
 					tiles[r][c - count] = new Tile(0, r, c - count);
-					System.out.println(r + " " + c);
 					count++;
 				}
 				if (tiles[r][c].getValue() == 0) {
@@ -152,7 +143,6 @@ public class Grid {
 			}
 		}
 		if (gameOverChecker == 0) {
-			System.out.println("game over");
 			gr.gameOver();
 		} else {
 			randTile();
@@ -170,12 +160,10 @@ public class Grid {
 	}
 
 	public void moveRight(GameRunner gr) {
-		//makes a new tile even if an invalid move is made
 		int gameOverChecker = 0;
 		for (int r = 0; r <= 3; r++) { //top to bottom
 			for (int c = 2; c >= 0; c--) { //left to right
 				int count = 0;
-				System.out.println(r + (c + count));
 				while (canTileMoveRight(r, c + count)) {
 					Tile temp = new Tile(tiles[r][c + count].getValue() + tiles[r][c + 1 + count].getValue(), r, c + 1 + count); //adds current tile with tile above
 					gr.getPoints().add(temp.getValue());
@@ -189,7 +177,6 @@ public class Grid {
 			}
 		}
 		if (gameOverChecker == 0) {
-			System.out.println("game over");
 			gr.gameOver();
 		} else {
 			randTile();
