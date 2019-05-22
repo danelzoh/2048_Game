@@ -91,7 +91,7 @@ public class GameRunner {
 		//end.getImage("tile-1Image.jpg");
 		
 		
-		JOptionPane.showMessageDialog(null, "loser");
+		JOptionPane.showMessageDialog(null, "Invalid move / no moves left");
 		//for some reason, the dialogue box will be shown on instances of moveUp() where none of the tiles move
 
 	}
