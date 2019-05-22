@@ -19,6 +19,7 @@ public class Tile {
         value = v;
         row = r;
         col = c;
+        hasAdded = false; 
         getImage("tile"+v+"Image.jpg");
         //System.out.println("tile"+v+"Image.jpg");
 
