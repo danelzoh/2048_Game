@@ -79,7 +79,7 @@ public class GameRunner {
 
 	public void gameOver(){
 		
-		JOptionPane.showMessageDialog(null, "loser");
+		JOptionPane.showMessageDialog(null, "nigger");
 		//for some reason, the dialogue box will be shown on instances of moveUp() where none of the tiles move
 
 	}
