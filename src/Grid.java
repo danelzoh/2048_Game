@@ -30,26 +30,15 @@ public class Grid {
 		}
 	}
 
-	public boolean isGameOver() {
-		for(Tile[] tr : tiles) {
-			for(Tile t : tr) {
-				if(t.getValue() == 0) {
-					return false;
-				}
-			}
-		}
-		return true;
-	}
-
 
 	public void randTile() {
-		boolean done = false;
-		while (!done) {
+		//boolean done = false;
+		for(int i = 0; i<1000; i++) {
 			int row = (int) (Math.random() * 4);
 			int col = (int) (Math.random() * 4);
 			if (tiles[row][col].getValue() == 0) {
 				tiles[row][col] = new Tile(2, row, col);
-				done = true;
+				break;
 			}
 			//System.out.println("inside randTile");
 		}
@@ -62,6 +51,8 @@ public class Grid {
 			}
 		}
 	}
+
+	private int moves = 0;
 
 	public boolean canTileMoveUp(int r, int c) {
 		if (r != 0 && tiles[r][c].getValue() != 0 && !tiles[r][c].hasAdded) {
@@ -78,7 +69,6 @@ public class Grid {
 	public void moveUp(GameRunner gr) {
 		//DOES NOT MAKE A NEW TILE ON AN INVALID MOVE
 		//makes a game over dialogue box even when the game is not over
-		int gameOverChecker = 0;
 		for (int r = 1; r <= 3; r++) { //up to down
 			for (int c = 0; c <= 3; c++) { //left to right
 				int count = 0;
@@ -93,17 +83,17 @@ public class Grid {
 					tiles[r - count][c] = new Tile(0, r - count, c);
 					System.out.println(r + " " + c);
 					count++;
-					if (tiles[r][c].getValue() == 0) {
-						gameOverChecker += 1;
-					}
+					moves++;
 				}
 			}
 		}
+		if (moves > 0){
+			randTile();
+		}
+		moves = 0;
 		if (youLost(tiles)) {
 			System.out.println("game over");
 			gr.gameOver();
-		} else {
-			randTile();
 		}
 	}
 
@@ -118,7 +108,6 @@ public class Grid {
 
 	public void moveDown(GameRunner gr) {
 		//makes a new tile even if an invalid move is made
-		int gameOverChecker = 0;
 		for (int r = 3; r >= 0; r--) { //down to up
 			for (int c = 0; c <= 3; c++) { //left to right
 				int count = 0;
@@ -133,19 +122,17 @@ public class Grid {
 					tiles[r + 1 + count][c] = temp;
 					tiles[r + count][c] = new Tile(0, r + count, c);
 					count++;
+					moves++;
 				}
-				if (tiles[r][c].getValue() == 0) {
-					gameOverChecker += 1;
-				}
-				resetTiles();
 			}
 		}
+		if (moves > 0){
+			randTile();
+		}
+		moves = 0;
 		if (youLost(tiles)) {
 			System.out.println("game over");
-			gr.gameOver();	
-		} 
-		else {
-			randTile();
+			gr.gameOver();
 		}
 	}
 
@@ -160,23 +147,8 @@ public class Grid {
 
 	public void moveLeft(GameRunner gr) {
 		//makes a new tile even if an invalid move is made
-		int gameOverChecker = 0;
 		for (int r = 0; r <= 3; r++) { //top to bottom
 			for (int c = 1; c <= 3; c++) { //left to right
-				//				int k = 1;
-				//				while(c - k >= 0 && tiles[r][c - k].getValue() == 0) {
-				//					tiles[r][c - k] = tiles[r][c - k + 1];
-				//					tiles[r][c - k + 1] = new Tile(0, r, c - k +1);
-				//					k++;
-				//				}
-				//				k--;
-				//				if(tiles[r][c - k].getValue() == tiles[r][c - k - 1].getValue()) {
-				//					Tile temp = new Tile(tiles[r][c - k].getValue() + tiles[r][c - k - 1].getValue(), r, c - k - 1);
-				//					tiles[r][c - k - 1] = temp;
-				//					tiles[r][c - k] = new Tile(0, r, c - k);
-				//				}
-
-
 				int count = 0;
 				while (canTileMoveLeft(r, c - count)) {
 					Tile temp = new Tile(tiles[r][c - count].getValue() + tiles[r][c - 1 - count].getValue(), r, c - 1 - count); //adds current tile with tile above
@@ -188,18 +160,17 @@ public class Grid {
 					tiles[r][c - count] = new Tile(0, r, c - count);
 					System.out.println(r + " " + c);
 					count++;
-				
+					moves++;
 				}
 			}
 		}
-
-		resetTiles();
-
+		if (moves > 0){
+			randTile();
+		}
+		moves = 0;
 		if (youLost(tiles)) {
 			System.out.println("game over");
 			gr.gameOver();
-		} else {
-			randTile();
 		}
 	}
 
@@ -215,7 +186,6 @@ public class Grid {
 
 	public void moveRight(GameRunner gr) {
 		//makes a new tile even if an invalid move is made
-		int gameOverChecker = 0;
 		for (int r = 0; r <= 3; r++) { //top to bottom
 			for (int c = 2; c >= 0; c--) { //left to right
 				int count = 0;
@@ -229,18 +199,17 @@ public class Grid {
 					tiles[r][c + 1 + count] = temp;
 					tiles[r][c + count] = new Tile(0, r, c + count);
 					count++;
+					moves++;
 				}
-				if (tiles[r][c].getValue() == 0) {
-					gameOverChecker += 1;
-				}
-				resetTiles();
 			}
 		}
+		if (moves > 0){
+			randTile();
+		}
+		moves = 0;
 		if (youLost(tiles)) {
 			System.out.println("game over");
 			gr.gameOver();
-		} else {
-			randTile();
 		}
 	}
 
@@ -263,7 +232,7 @@ public class Grid {
 
 				}
 				if(r==4) {
-					break;
+					return true;
 				}
 				if(canTileMoveUp(r,c)) {
 					return false;
