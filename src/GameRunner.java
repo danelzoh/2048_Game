@@ -16,6 +16,8 @@ public class GameRunner {
 	private static final int REFRESH_RATE = 10;
 	private Grid grid;
 	private Points points;
+	private Title title;
+
 
 	public static void main(String[] args) {
 
@@ -27,12 +29,14 @@ public class GameRunner {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		grid = new Grid();
 		points = new Points();
+		title = new Title();
 		panel = new JPanel() {
 			@Override
 			public void paintComponent(Graphics g) {
 				super.paintComponent(g);
 				grid.draw(g);
 				points.draw(g);
+				title.draw(g);
 			}
 		};
 		panel.setLayout(null);
