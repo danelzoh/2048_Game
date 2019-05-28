@@ -82,6 +82,9 @@ public class Grid {
 					tiles[r - 1 - count][c] = temp;
 					tiles[r - count][c] = new Tile(0, r - count, c);
 					System.out.println(r + " " + c);
+					if(tiles[r-1-count][c].getValue()== 2048){
+						gr.win();
+					}
 					count++;
 					moves++;
 				}
@@ -121,6 +124,9 @@ public class Grid {
 					}
 					tiles[r + 1 + count][c] = temp;
 					tiles[r + count][c] = new Tile(0, r + count, c);
+					if(tiles[r-1-count][c].getValue()== 2048){
+						gr.win();
+					}
 					count++;
 					moves++;
 				}
@@ -159,6 +165,9 @@ public class Grid {
 					tiles[r][c - 1 - count] = temp;
 					tiles[r][c - count] = new Tile(0, r, c - count);
 					System.out.println(r + " " + c);
+					if(tiles[r-1-count][c].getValue()== 2048){
+						gr.win();
+					}
 					count++;
 					moves++;
 				}
@@ -198,6 +207,9 @@ public class Grid {
 					}
 					tiles[r][c + 1 + count] = temp;
 					tiles[r][c + count] = new Tile(0, r, c + count);
+					if(tiles[r-1-count][c].getValue()== 2048){
+						gr.win();
+					}
 					count++;
 					moves++;
 				}

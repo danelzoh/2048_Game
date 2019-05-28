@@ -99,6 +99,9 @@ public class GameRunner {
 		//for some reason, the dialogue box will be shown on instances of moveUp() where none of the tiles move
 
 	}
+	public void win(){
+		JOptionPane.showMessageDialog(null, "Congrats! You've dodged a wrench!");
+	}
 
 	public Points getPoints(){
 		return points;
