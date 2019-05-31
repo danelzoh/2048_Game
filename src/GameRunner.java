@@ -17,6 +17,7 @@ public class GameRunner {
 	private Grid grid;
 	private Points points;
 	private Title title;
+	private Legend legend;
 
 
 	public static void main(String[] args) {
@@ -30,6 +31,7 @@ public class GameRunner {
 		grid = new Grid();
 		points = new Points();
 		title = new Title();
+		legend = new Legend();
 		panel = new JPanel() {
 			@Override
 			public void paintComponent(Graphics g) {
@@ -37,6 +39,7 @@ public class GameRunner {
 				grid.draw(g);
 				points.draw(g);
 				title.draw(g);
+				legend.draw(g);
 			}
 		};
 		panel.setLayout(null);
@@ -90,17 +93,23 @@ public class GameRunner {
 		/*show a "GAME OVER" screen
 		add an option to restart the game
 		*/
-		
+
 		//Tile end = new Tile(-1, 2, 2);
 		//end.getImage("tile-1Image.jpg");
-		
-		
-		JOptionPane.showMessageDialog(null, "You are a less experienced 2048 player");
-		//for some reason, the dialogue box will be shown on instances of moveUp() where none of the tiles move
 
+
+		JOptionPane.showMessageDialog(null, "YOU LOST - game will reset after clicking 'ok'");
+		start();
+		//for some reason, the dialogue box will be shown on instances of moveUp() where none of the tiles move
 	}
+
 	public void win(){
 		JOptionPane.showMessageDialog(null, "Congrats! You've dodged a wrench!");
+	}
+	public void addTile(){
+		System.out.println("Maximum");
+
+		legend.addTile(grid.getMaxVal());
 	}
 
 	public Points getPoints(){

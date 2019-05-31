@@ -54,6 +54,12 @@ public class Grid {
 
 	private int moves = 0;
 
+	private int maxVal=2;
+
+	public int getMaxVal(){
+		return maxVal;
+	}
+
 	public boolean canTileMoveUp(int r, int c) {
 		if (r != 0 && tiles[r][c].getValue() != 0 && !tiles[r][c].hasAdded) {
 			if (tiles[r - 1][c].getValue() == 0 || tiles[r][c].getValue() == tiles[r - 1][c].getValue()) {
@@ -72,6 +78,7 @@ public class Grid {
 		for (int r = 1; r <= 3; r++) { //up to down
 			for (int c = 0; c <= 3; c++) { //left to right
 				int count = 0;
+
 				while (canTileMoveUp(r - count, c)) {
 					//tiles[r][c].shiftUp();
 					Tile temp = new Tile(tiles[r - count][c].getValue() + tiles[r - 1 - count][c].getValue(), r - 1 - count, c); //adds current tile with tile above
@@ -87,6 +94,10 @@ public class Grid {
 					}
 					count++;
 					moves++;
+				}
+				if(tiles[r][c].getValue()>maxVal){
+					maxVal *= 2;
+					gr.addTile();
 				}
 			}
 		}
@@ -130,6 +141,10 @@ public class Grid {
 					count++;
 					moves++;
 				}
+				if(tiles[r][c].getValue()>maxVal){
+					maxVal *= 2;
+					gr.addTile();
+				}
 			}
 		}
 		if (moves > 0){
@@ -171,6 +186,10 @@ public class Grid {
 					count++;
 					moves++;
 				}
+				if(tiles[r][c].getValue()>maxVal){
+					maxVal *= 2;
+					gr.addTile();
+				}
 			}
 		}
 		if (moves > 0){
@@ -186,7 +205,7 @@ public class Grid {
 	public boolean canTileMoveRight(int r, int c) {
 		if (c != 3 && tiles[r][c].getValue() != 0 && !tiles[r][c].hasAdded) {
 			if (tiles[r][c + 1].getValue() == 0 || tiles[r][c].getValue() == tiles[r][c + 1].getValue()) {
-				System.out.println("can move right");
+				//System.out.println("can move right");
 				return true;
 			}
 		}
@@ -212,6 +231,11 @@ public class Grid {
 					}
 					count++;
 					moves++;
+
+				}
+				if(tiles[r][c].getValue()>maxVal){
+					maxVal *= 2;
+					gr.addTile();
 				}
 			}
 		}

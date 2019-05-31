@@ -53,6 +53,11 @@ public class Tile {
         g.drawImage(image, col*width, (row*height)+titleHeight, width,height, null);
     }
 
+    public void drawLeg(Graphics g) {
+        g.drawImage(image, col*width +800, (row*height)+titleHeight, width,height, null);
+    }
+
+
     public int getRow() {
         return this.getRow();
     }
